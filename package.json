@@ -1,0 +1,37 @@
+{
+  "name": "env-example-audit",
+  "version": "0.1.0",
+  "description": "A zero-dependency CLI that keeps environment variable usage in sync with .env.example.",
+  "type": "module",
+  "bin": {
+    "env-example-audit": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node ./src/cli.js . --ignore test",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dotenv",
+    "environment-variables",
+    "cli",
+    "security",
+    "github-actions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m18023318493-sys/env-example-audit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m18023318493-sys/env-example-audit/issues"
+  },
+  "homepage": "https://github.com/m18023318493-sys/env-example-audit#readme",
+  "license": "MIT"
+}
